@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/whitef"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.gal">
+
+    <TextView
+        android:id="@+id/gale"
+        android:layout_width="165sp"
+        android:layout_height="30sp"
+        android:layout_marginTop="5dp"
+        android:text="Welcome to my Gallery"
+        android:textColor="@color/bimu"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gale">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="135dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/pem" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/sen" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/me" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/top" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/poh" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/uni" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/kun" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/grp" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

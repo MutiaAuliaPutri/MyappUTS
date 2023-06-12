@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".ui.PP.pp">
+
+    <ImageView
+        android:id="@+id/pp"
+        android:layout_width="175dp"
+        android:layout_height="179dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/aku"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text=" Hallo! Welcome to my Profile. \n Perkenalkan nama saya Mutia Aulia Putri.\n Bisa panggil saya Mutia.\n Saya adalah seorang mahasiswa semester 6. \n Universitas Komputer Indonesia adalah tempat saya berkuliah. \n I'm Introvert Girl, so don't any question for me!"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pp" />
+
+    <Button
+        android:id="@+id/btnInstagram"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="@color/purple_200"
+        android:onClick="openSocialMedia"
+        android:text="Instagram"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/des" />
+
+    <Button
+        android:id="@+id/btnWhatsapp"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/purple_200"
+        android:onClick="openSocialMedia"
+        android:text="Whatsapp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnInstagram"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.786"
+        app:layout_constraintStart_toEndOf="@+id/btnInstagram"
+        app:layout_constraintTop_toTopOf="@+id/btnInstagram" />
+
+    <Button
+        android:id="@+id/btnEmail"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/purple_200"
+        android:onClick="openSocialMedia"
+        android:text="Email"
+        app:layout_constraintEnd_toEndOf="@+id/btnWhatsapp"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/btnInstagram"
+        app:layout_constraintTop_toBottomOf="@+id/btnInstagram" />
+
+    <TextView
+        android:id="@+id/txt_maps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="gmaps"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnEmail"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/btnEmail"
+        app:layout_constraintTop_toBottomOf="@+id/btnEmail" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/showDialogButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="About"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/txt_maps"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/txt_maps"
+        app:layout_constraintTop_toBottomOf="@+id/txt_maps" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

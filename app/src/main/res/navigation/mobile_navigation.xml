@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.myapputs.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_PP"
+        android:name="com.example.myapputs.ui.PP.pp"
+        android:label="fragment_pp"
+        tools:layout="@layout/fragment_pp" />
+    <fragment
+        android:id="@+id/navigation_DAl"
+        android:name="com.example.myapputs.ui.DA.da"
+        android:label="fragment_da"
+        tools:layout="@layout/fragment_da" />
+    <fragment
+        android:id="@+id/navigation_gallery"
+        android:name="com.example.myapputs.ui.gallery.gal"
+        android:label="fragment_gal"
+        tools:layout="@layout/fragment_gal" />
+    <fragment
+        android:id="@+id/navigation_music"
+        android:name="com.example.myapputs.ui.MV.mv"
+        android:label="fragment_mv"
+        tools:layout="@layout/fragment_mv" />
+</navigation>
